@@ -1,0 +1,23 @@
+@local= localhost:3000/api/v1/users
+
+
+// ping test
+###
+GET http://{{local}}/ HTTP/1.1
+
+// post BOOK
+###
+POST http://{{local}}/signup HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "t",
+    "password": "uyfycgdt2",
+    "email": "test@gmail.com",
+    "age": 12,
+    "address": "test12 city",
+    "phone": "123456789",
+    "role": "user"
+}
+
+###
