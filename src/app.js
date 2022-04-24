@@ -19,4 +19,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use("/api/v1/users", router);
 
+app.get("/", (req, res) => {
+    res.send('hello')
+})
+
 export default app;
