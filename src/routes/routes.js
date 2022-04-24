@@ -1,6 +1,8 @@
 import express from "express";
 import c from "../controller/index.js";
 import passport from "../../config/auth.js";
+import dotenv from "dotenv";
+dotenv.config();
 const router = express.Router();
 
 function isLoggedIn(req, res, next) {
