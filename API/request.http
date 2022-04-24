@@ -11,13 +11,12 @@ POST http://{{local}}/signup HTTP/1.1
 content-type: application/json
 
 {
-    "userName": "t",
+    "userName": "thinkpad",
     "password": "uyfycgdt2",
     "email": "test@gmail.com",
     "age": 12,
     "address": "test12 city",
-    "phone": "123456789",
-    "role": "user"
+    "phone": "123456789"
 }
 
 ###
