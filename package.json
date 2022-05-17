@@ -5,8 +5,10 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
+    "start": "node server.js",
     "db:test": "node ./config/testConnection.js",
-    "start": "node server.js"
+    "migrate" : "node ./config/migration/createTable.js",
+    "migrate:undo": "node ./config/migration/dropTable.js"
   },
   "type": "module",
   "keywords": [],
